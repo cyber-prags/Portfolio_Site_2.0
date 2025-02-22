@@ -105,7 +105,7 @@ export const projects = [
     des: "Latest Portfolio Page.",
     img: "/grid.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/cyber-prags/New-Portfolio-Website/tree/master",
+    link: "https://github.com/cyber-prags/Portfolio_Site_2.0",
   },
   {
     id: 2,

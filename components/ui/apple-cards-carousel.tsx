@@ -42,7 +42,7 @@ export const Carousel = ({ items }: CarouselProps) => {
     checkScroll();
     const interval = setInterval(() => {
       if (!isHovered) autoScroll();
-    }, 5000); // Auto-scroll every 5 seconds
+    }, 3000); // Auto-scroll every 5 seconds
 
     return () => clearInterval(interval);
   }, [isHovered]);

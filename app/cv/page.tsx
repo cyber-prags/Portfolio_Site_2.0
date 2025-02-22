@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { LampContainer } from "@/components/ui/lamp";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-import { Timeline } from "@/components/ui/timeline";
+import { Timeline } from "@/components/ui/Timeline";
 
 const transition = {
   duration: 0.5,

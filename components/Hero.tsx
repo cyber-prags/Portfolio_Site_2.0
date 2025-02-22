@@ -33,7 +33,7 @@ const Hero = () => {
 
           {/* Animated Subtext with FlipWords */}
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Pragyan and I am a{" "}
+            Hi, I&apos;m Pragyan and I am a{" "}
             {isClient ? (
               <FlipWords
                 words={[

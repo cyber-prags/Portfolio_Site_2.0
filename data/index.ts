@@ -265,7 +265,7 @@ export const companies = [
   {
     id: 1,
     name: "Siemens",
-    img: "/Siemens.svg",
+    img: "/Siemens_icon.png",
     nameImg: "/Siemens.svg",
   },
   {

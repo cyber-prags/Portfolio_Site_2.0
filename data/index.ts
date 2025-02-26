@@ -89,7 +89,7 @@ export const blogs = [
   //   bgImg: "/grid.svg",
   // },
   {
-    id: 3,
+    id: 2,
     title: "Get Comfortable with Exploring Unknown Horizons",
     description:
       "Embracing the unknown: a little dread, a lot of growth, and stories you'll laugh about later!",

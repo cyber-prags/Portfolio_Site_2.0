@@ -72,14 +72,14 @@ export const gridItems = [
 
 // Need to add a blog section to direct to me blog
 export const blogs = [
-  // {
-  //   id: 1,
-  //   title: "Quantum Computing",
-  //   description:
-  //     "An introduction to Quantum Computing and the various architectures of quantum computers present today.",
-  //   link: "https://medium.com/@yourHandle/my-journey-into-data-science",
-  //   bgImg: "/grid.svg",
-  // },
+  {
+    id: 1,
+    title: "Microsoft’s Majorana 1 Chip: The Future of Quantum Computing Has Arrived",
+    description:
+      "An deep dive into Microsoft's new Majorana 1 chip & what it means for the future.",
+    link: "https://medium.com/@pragyanjyotidutta/microsofts-majorana-1-chip-the-future-of-quantum-computing-has-arrived-5d73c76fe95a",
+    bgImg: "/grid.svg",
+  },
   // {
   //   id: 2,
   //   title: "Understanding AI Trends",

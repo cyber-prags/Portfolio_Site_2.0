@@ -100,6 +100,14 @@ export const blogs = [
 
 export const projects = [
   {
+    id: 3,
+    title: "Multi-Agent Hedge Fund Analyst",
+    des: "A multi-agentic system that simulates a Hedge Fund based on 9 agents to give investment advice to the user based on stock tickers ",
+    img: "/grid.svg",
+    iconLists: ["/Python.svg", "/NN.svg", "/stream.svg"],
+    link: "https://github.com/cyber-prags/Agentic-AI-Hedge-Fund",
+  },
+  {
     id: 1,
     title: "My Portfolio Page",
     des: "Latest Portfolio Page.",
@@ -115,14 +123,7 @@ export const projects = [
     iconLists: ["/Python.svg", "/NN.svg"],
     link: "https://github.com/cyber-prags/Fake-News-Detection-using-Graph-Neural-NetworksGraph",
   },
-  // {
-  //   id: 3,
-  //   title: "Multi-Agent Customer Support with LangFlow",
-  //   des: "This project aims at building a multi-agent customer Support Service using Langflow and AstraDB to support customers with their queries.",
-  //   img: "/grid.svg",
-  //   iconLists: ["/Python.svg", "/NN.svg", "/stream.svg"],
-  //   link: "https://github.com/cyber-prags/Multi-Agent-Customer-Support-with-Langflow",
-  // },
+
 
   {
     id: 4,

@@ -5,7 +5,7 @@ import { navItems } from "@/data";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import RecentBlogs from "@/components/RecentBlogs"; // Import the new component
-import RecentProjects from "@/components/RecentProjects";
+import { ExpandableProjects } from "@/components/ExpandableProjects";
 import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
@@ -21,7 +21,7 @@ const Home = () => {
         <Grid />
         {/* New Recent Blogs Section */}
         <RecentBlogs />
-        <RecentProjects />
+        <ExpandableProjects />
         <Clients />
         <Experience />
         <Approach />

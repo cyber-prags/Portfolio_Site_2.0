@@ -66,7 +66,7 @@ export function ExpandableProjects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/20 h-full w-full z-10"
+            className="fixed inset-0 bg-black/30 backdrop-blur-md h-full w-full z-10"
           />
         )}
       </AnimatePresence>
@@ -158,14 +158,17 @@ export function ExpandableProjects() {
             <div className="flex flex-col gap-4 w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  width={100}
-                  height={100}
                   src={card.src}
                   alt={card.title}
-                  // Increase the height from 15rem (h-60) to 18rem (h-72), for example
-                  className="h-72 w-full rounded-lg object-cover object-top"
+                  width={600} // Increased width
+                  height={400} // Increased height
+                  layout="intrinsic" // Ensures high quality
+                  priority // Forces Next.js to optimize loading
+                  unoptimized // Prevents unnecessary compression
+                  className="h-72 w-full rounded-lg object-cover" // Keeps proper fit
                 />
               </motion.div>
+
               <div className="flex flex-col items-center md:items-start">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}

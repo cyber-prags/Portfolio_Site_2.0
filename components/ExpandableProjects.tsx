@@ -7,13 +7,12 @@ import { projects } from "@/data";
 
 const projectCards = projects.map((project) => ({
   title: project.title,
-  description: project.des,
+  description: project.des, 
   src: project.img,
   ctaText: "View Project",
   ctaLink: project.link,
   content: (
     <div>
-      <p>{project.des}</p>
       {project.iconLists && project.iconLists.length > 0 && (
         <div className="flex space-x-2 mt-2">
           {project.iconLists.map((icon, idx) => (

@@ -888,17 +888,23 @@ export default function CVPage() {
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
                     <strong>Core Modules:</strong> Quantum Mechanics,
-                    Electromagnetism, Thermodynamics, Statistical Physics, Classical Mechanics, Electronics, Fuzzy Logic and Neural Networks, General Biology, General Chemistry, General Mathematics, Introduction to Scientific Computing, Mathematical Physics, Modern Physics. 
+                    Electromagnetism, Thermodynamics, Statistical Physics, Classical
+                    Mechanics, Electronics, Fuzzy Logic and Neural Networks, General
+                    Biology, General Chemistry, General Mathematics, Introduction to
+                    Scientific Computing, Mathematical Physics, Modern Physics.
                   </li>
                   <li>
-                    <strong>Research Project:</strong> Investigated the dust properties of the Coalsack region and ran simulations to calculate the dust temperature and the IR intensity of the Coalsack region due to contribution from the three brightest star in the nebula, alpha cru, beta cru and beta cen and compared the results of our model to real-world observations.
+                    <strong>Research Project:</strong> Investigated the dust properties of the 
+                    Coalsack region and ran simulations to calculate the dust temperature and 
+                    the IR intensity of the Coalsack region due to contribution from the three 
+                    brightest stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen. Compared 
+                    the results of our model to real-world observations.
+                  </li>
                   <li>
-                    <strong>Honors:</strong> Graduated with Honors (GPA:
-                    8.06/10).
+                    <strong>Honors:</strong> Graduated with Honors (GPA: 8.06/10).
                   </li>
                 </ul>
               </div>
-            </div>
           </section>
 
           {/* Publications */}

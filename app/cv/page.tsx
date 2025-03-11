@@ -631,13 +631,13 @@ export default function CVPage() {
               About Me
             </h2>
             <p className="text-lg leading-relaxed">
-              I am a proactive and detail-oriented <b>Data Scientist</b> with a
-              passion for statistical modeling, machine learning, and
-              large-scale analytics. With specialization in{" "}
-              <b>Python, SQL, ETL pipelines</b>, and{" "}
-              <b>cloud technologies (AWS, GCP, Azure)</b>, I am dedicated to
-              leveraging AI-driven solutions to enhance decision-making and
-              operational efficiency.
+              If Sherlock Holmes had a laptop, a caffeine addiction, and an unhealthy obsession with data, he&apos;d probably be me.
+              By day, I&apos;m a Data Scientist wrangling numbers, training rogue AI models, and whispering sweet nothings to SQL databases.
+              By night, I&apos;m either debugging code, debating whether R is superior to Python (it&apos;s not, fight me), 
+              or convincing myself that this will be the week I finally master Kubernetes. With experience spanning data science,
+              machine learning, and data engineering, I&apos;ve built AI systems that optimize sales, predict churn, and—if given enough 
+              coffee—might just take over the world (ethically, of course). When I&apos;m not making dashboards look pretty in Tableau or 
+              telling a neural network to do better, you&apos;ll probably find me listening to music, watching football, or writing about why data science is basically modern-day wizardry.
             </p>
           </section>
 

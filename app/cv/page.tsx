@@ -866,10 +866,9 @@ export default function CVPage() {
                   </li> Mathematics for Data Science -II, Statistics for Data Science - I, Statistics for Data Science - II, Programming in Python, Tools in Data Science, Modern Application Development-I,Modern App Development-II, Programming, Data Structures and Algorithms in Python, System Commands
                   </li>
                   <li>
-                    <strong>Capstone Project:</strong> <li>Designed and built an
+                    <strong>Capstone Project:</strong> Designed and built an
                     end-to-end data pipeline for Sentiment Analysis on Movie Reviews.
-                    </li>
-                    <li>Built a full-stack application, Grocify that was an online grocery shopping app </li>
+                      Built a full-stack application, Grocify that was an online grocery shopping app 
                   </li>
                   <li>
                     <strong>Achievement:</strong> Completed with distinction.

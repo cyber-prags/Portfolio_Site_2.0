@@ -296,142 +296,136 @@ function PublicationsCardDemo() {
 --------------------------- */
 function ExpandableCertifications() {
   const certificationsData = [
-    {
-      title: "AWS Certified AI Practitioner",
-      description: "Issued by Amazon Web Services in 2025.",
-      src: "/AWS AI Prac.png",
-      ctaText: "View Credential",
-      ctaLink: "https://aws.amazon.com/certification/",
-      content: (
-        <div className="text-black">
-          <p>
-            Achieved a strong foundation in AI/ML services on AWS. Demonstrated
-            expertise in building, training, and deploying ML models at scale.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Generative AI using Large Language Models",
-      description: "Issued by AWS & DeepLearning.AI in 2023.",
-      src: "/AI_LLM.png",
-      ctaText: "View Credential",
-      ctaLink:
-        "https://www.coursera.org/account/accomplishments/certificate/NHFSQREJP6DC",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated skills in designing and implementing advanced AI solutions
-            using large language models.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Matillion Data Productivity Cloud, Foundations",
-      description: "Issued by Matillion Academy in 2023.",
-      src: "/Matillion DPC.png",
-      ctaText: "View Credential",
-      ctaLink: "https://academy.matillion.com/certificate/CmmIUu5REg",
-      content: (
-        <div className="text-black">
-          <p>
-            Demonstrated proficiency in data productivity and cloud data
-            warehousing using Matillion tools.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "HackerRank SQL (Basic) Certification",
-      description: "Issued by HackerRank in 2023.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.hackerrank.com/certificates/216aed415b50",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "HackerRank SQL (Intermediate) Certification",
-      description: "Issued by HackerRank in 2023.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.hackerrank.com/certificates/e9ea2d792539",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Deep Learning with PyTorch: Object Localization",
-      description: "Issued by Coursera in 2023.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.coursera.org/account/accomplishments/certificate/XFZCKJYPEJ49",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "Python for Data Science, AI & Development",
-      description: "Issued by Coursera in 2021.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.coursera.org/account/accomplishments/verify/7NUVCG2BZXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
-      {
-      title: "Mathematics for Machine Learning: Multivariate Calculus",
-      description: "Issued by Coursera in 2021.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.coursera.org/account/accomplishments/certificate/DU2WRS586NEM",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
-      {
-      title: "Tools for Data Science",
-      description: "Issued by Coursera in 2020.",
-      src: "/SQL_Basic.png",
-      ctaText: "View Credential",
-      ctaLink: "https://www.coursera.org/account/accomplishments/verify/PX3H7LNZG3KT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
-      content: (
-        <div className="text-black">
-          <p>
-            Validated SQL skills with a focus on query optimization and data
-            manipulation.
-          </p>
-        </div>
-      ),
-    },
+     {
+    title: "AWS Certified AI Practitioner",
+    description: "Issued by Amazon Web Services in 2025.",
+    src: "/AWS AI Prac.png",
+    ctaText: "View Credential",
+    ctaLink: "https://aws.amazon.com/certification/",
+    content: (
+      <div className="text-black">
+        <p>
+          Demonstrated expertise in foundational AI/ML principles, cloud-based AI solutions, and AWS machine learning services. Gained hands-on experience in deploying, training, and managing ML models using AWS SageMaker.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Generative AI using Large Language Models",
+    description: "Issued by AWS & DeepLearning.AI in 2023.",
+    src: "/AI_LLM.png",
+    ctaText: "View Credential",
+    ctaLink:
+      "https://www.coursera.org/account/accomplishments/certificate/NHFSQREJP6DC",
+    content: (
+      <div className="text-black">
+        <p>
+          Developed a deep understanding of transformer-based models, prompt engineering, and fine-tuning LLMs. Explored real-world applications of generative AI and built end-to-end AI solutions using AWS services.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Matillion Data Productivity Cloud, Foundations",
+    description: "Issued by Matillion Academy in 2023.",
+    src: "/Matillion DPC.png",
+    ctaText: "View Credential",
+    ctaLink: "https://academy.matillion.com/certificate/CmmIUu5REg",
+    content: (
+      <div className="text-black">
+        <p>
+          Mastered cloud-based ETL and data transformation pipelines using Matillion. Learned how to optimize workflows, automate data ingestion, and enhance cloud data productivity.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "HackerRank SQL (Basic) Certification",
+    description: "Issued by HackerRank in 2023.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink: "https://www.hackerrank.com/certificates/216aed415b50",
+    content: (
+      <div className="text-black">
+        <p>
+          Validated SQL skills in writing basic queries, filtering and sorting data, joins, and aggregate functions. Demonstrated proficiency in handling structured data for analysis.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "HackerRank SQL (Intermediate) Certification",
+    description: "Issued by HackerRank in 2023.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink: "https://www.hackerrank.com/certificates/e9ea2d792539",
+    content: (
+      <div className="text-black">
+        <p>
+          Showcased expertise in complex SQL queries, advanced joins, window functions, CTEs, and optimizing query performance for large datasets.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Deep Learning with PyTorch: Object Localization",
+    description: "Issued by Coursera in 2023.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink:
+      "https://www.coursera.org/account/accomplishments/certificate/XFZCKJYPEJ49",
+    content: (
+      <div className="text-black">
+        <p>
+          Gained hands-on experience in building object detection models using PyTorch. Explored techniques like bounding box regression, convolutional neural networks (CNNs), and transfer learning for localization tasks.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Python for Data Science, AI & Development",
+    description: "Issued by Coursera in 2021.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink:
+      "https://www.coursera.org/account/accomplishments/verify/7NUVCG2BZXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+    content: (
+      <div className="text-black">
+        <p>
+          Developed proficiency in Python programming for data science and AI applications. Covered topics including data wrangling, visualization, NumPy, Pandas, and Scikit-learn for machine learning.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Mathematics for Machine Learning: Multivariate Calculus",
+    description: "Issued by Coursera in 2021.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink: "https://www.coursera.org/account/accomplishments/certificate/DU2WRS586NEM",
+    content: (
+      <div className="text-black">
+        <p>
+          Studied the mathematical foundations of machine learning, focusing on partial derivatives, gradients, vector calculus, and optimization techniques essential for neural networks and deep learning.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: "Tools for Data Science",
+    description: "Issued by Coursera in 2020.",
+    src: "/SQL_Basic.png",
+    ctaText: "View Credential",
+    ctaLink:
+      "https://www.coursera.org/account/accomplishments/verify/PX3H7LNZG3KT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
+    content: (
+      <div className="text-black">
+        <p>
+          Explored various tools used in the data science ecosystem, including Jupyter Notebook, RStudio, Git, SQL databases, and cloud platforms for data analysis and model deployment.
+        </p>
+      </div>
+    ),
+  },
   ];
 
   const certCards = certificationsData.map((cert) => ({

@@ -862,12 +862,14 @@ export default function CVPage() {
                 </p>
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
-                    <strong>Key Subjects:</strong> Python Programming,
-                    Statistical Analysis, Data Visualization.
+                    <strong>Key Subjects:</strong> Business Analytics, Business Data Management, Computational Thinking, Database Management Systems, Machine Learning Foundations, Machine Learning Techniques, Machine Learning Practice, Mathematics for Data Science -I,
+                  </li> Mathematics for Data Science -II, Statistics for Data Science - I, Statistics for Data Science - II, Programming in Python, Tools in Data Science, Modern Application Development-I,Modern App Development-II, Programming, Data Structures and Algorithms in Python, System Commands
                   </li>
                   <li>
-                    <strong>Capstone Project:</strong> Designed and built an
-                    end-to-end data pipeline with predictive modeling.
+                    <strong>Capstone Project:</strong> <li>Designed and built an
+                    end-to-end data pipeline for Sentiment Analysis on Movie Reviews.
+                    </li>
+                    <li>Built a full-stack application, Grocify that was an online grocery shopping app </li>
                   </li>
                   <li>
                     <strong>Achievement:</strong> Completed with distinction.
@@ -886,12 +888,10 @@ export default function CVPage() {
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
                     <strong>Core Modules:</strong> Quantum Mechanics,
-                    Electromagnetism, Thermodynamics, Statistical Physics.
+                    Electromagnetism, Thermodynamics, Statistical Physics, Classical Mechanics, Electronics, Fuzzy Logic and Neural Networks, General Biology, General Chemistry, General Mathematics, Introduction to Scientific Computing, Mathematical Physics, Modern Physics. 
                   </li>
                   <li>
-                    <strong>Research Project:</strong> Investigated the
-                    properties of nanomaterials.
-                  </li>
+                    <strong>Research Project:</strong> Investigated the dust properties of the Coalsack region and ran simulations to calculate the dust temperature and the IR intensity of the Coalsack region due to contribution from the three brightest star in the nebula, alpha cru, beta cru and beta cen and compared the results of our model to real-world observations.
                   <li>
                     <strong>Honors:</strong> Graduated with Honors (GPA:
                     8.06/10).

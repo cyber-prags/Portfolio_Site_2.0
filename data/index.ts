@@ -105,7 +105,7 @@ export const projects = [
     title: "Multi-Agent Hedge Fund Analyst",
     des: "A multi-agentic system that simulates a Hedge Fund based on 9 agents to give investment advice to the user based on stock tickers ",
     img: "/Hedge.jpg",
-    iconLists: ["/Python.svg", "/NN.svg", "/stream.svg"],
+    iconLists: ["/Python.svg", "/NN.svg", "/stream.svg", "/perplexityai.png"],
     link: "https://github.com/cyber-prags/Agentic-AI-Hedge-Fund",
   },
   {
@@ -220,14 +220,14 @@ export const projects = [
     iconLists: ["Tableau.svg"],
     link: "https://public.tableau.com/app/profile/pragyan.jyoti.dutta/viz/BritishAirwaysAnalytics/Dashboard1",
   },
-  // {
-  //   id: 15,
-  //   title: "Patients Analytics in PowerBI",
-  //   des: "A Dashboard made in PowerBI showcasing the various Analytical stats of a hospital with key fields being number in-patients and out-patients.",
-  //   img: "/Patient.jpeg",
-  //   iconLists: ["/PBI.svg"],
-  //   link: "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=871c010f-5e61-4fb1-83ac-98610a7e9110&scope=https%3A%2F%2Fanalysis.windows.net%2Fpowerbi%2Fapi%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fapp.powerbi.com%2Fsignin&client-request-id=dd6b52c1-69a0-44c7-9f60-55972c935a51&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.39.0&client_info=1&code_challenge=x7ItDiQAI60bKXY-E54QSUalwfbhIpnW__9ctUEozkw&code_challenge_method=S256&nonce=fd40257d-a99f-4869-bb74-23bfc96a5969&state=eyJpZCI6IjNjZjJjYzkxLWY4M2EtNDE1Yy04MjFjLThhZWFkODRlOGJjMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7C1738512803704.9%3B1738512803706.2%3B1738512802590&site_id=500453&nux=1&msafed=0",
-  // },
+  {
+    id: 15,
+    title: "Patients Analytics in PowerBI",
+    des: "A Dashboard made in PowerBI showcasing the various Analytical stats of a hospital with key fields being number in-patients and out-patients.",
+    img: "/Patient.jpeg",
+    iconLists: ["/PBI.svg"],
+    link: "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=871c010f-5e61-4fb1-83ac-98610a7e9110&scope=https%3A%2F%2Fanalysis.windows.net%2Fpowerbi%2Fapi%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fapp.powerbi.com%2Fsignin&client-request-id=dd6b52c1-69a0-44c7-9f60-55972c935a51&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.39.0&client_info=1&code_challenge=x7ItDiQAI60bKXY-E54QSUalwfbhIpnW__9ctUEozkw&code_challenge_method=S256&nonce=fd40257d-a99f-4869-bb74-23bfc96a5969&state=eyJpZCI6IjNjZjJjYzkxLWY4M2EtNDE1Yy04MjFjLThhZWFkODRlOGJjMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D%7C1738512803704.9%3B1738512803706.2%3B1738512802590&site_id=500453&nux=1&msafed=0",
+  },
 ];
 
 export const testimonials = [

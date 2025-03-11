@@ -846,7 +846,7 @@ export default function CVPage() {
                   </li>
                   <li>
                     <strong>Awards:</strong> Commonwealth Postgraduate Bursary,
-                    PGT Vice-Chancellor's Internation Attainment Scholarship for
+                    PGT Vice-Chancellor&apos;s Internation Attainment Scholarship for
                     Academic Excellence
                   </li>
                 </ul>

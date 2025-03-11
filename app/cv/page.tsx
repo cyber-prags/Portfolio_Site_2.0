@@ -357,6 +357,81 @@ function ExpandableCertifications() {
         </div>
       ),
     },
+    {
+      title: "HackerRank SQL (Intermediate) Certification",
+      description: "Issued by HackerRank in 2023.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.hackerrank.com/certificates/e9ea2d792539",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills with a focus on query optimization and data
+            manipulation.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Deep Learning with PyTorch: Object Localization",
+      description: "Issued by Coursera in 2023.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.coursera.org/account/accomplishments/certificate/XFZCKJYPEJ49",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills with a focus on query optimization and data
+            manipulation.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Python for Data Science, AI & Development",
+      description: "Issued by Coursera in 2021.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.coursera.org/account/accomplishments/verify/7NUVCG2BZXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills with a focus on query optimization and data
+            manipulation.
+          </p>
+        </div>
+      ),
+    },
+      {
+      title: "Mathematics for Machine Learning: Multivariate Calculus",
+      description: "Issued by Coursera in 2021.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.coursera.org/account/accomplishments/certificate/DU2WRS586NEM",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills with a focus on query optimization and data
+            manipulation.
+          </p>
+        </div>
+      ),
+    },
+      {
+      title: "Tools for Data Science",
+      description: "Issued by Coursera in 2020.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.coursera.org/account/accomplishments/verify/PX3H7LNZG3KT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills with a focus on query optimization and data
+            manipulation.
+          </p>
+        </div>
+      ),
+    },
   ];
 
   const certCards = certificationsData.map((cert) => ({

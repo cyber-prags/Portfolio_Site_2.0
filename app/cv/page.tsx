@@ -87,7 +87,8 @@ function useOutsideClick(
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, [ref, callback]);
 }
 
@@ -367,7 +368,9 @@ function ExpandableCertifications() {
     content: cert.content,
   }));
 
-  const [active, setActive] = useState<null | (typeof certCards)[number]>(null);
+  const [active, setActive] = useState<null | (typeof certCards)[number]>(
+    null
+  );
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
 
@@ -631,13 +634,18 @@ export default function CVPage() {
               About Me
             </h2>
             <p className="text-lg leading-relaxed">
-              If Sherlock Holmes had a laptop, a caffeine addiction, and an unhealthy obsession with data, he&apos;d probably be me.
-              By day, I&apos;m a Data Scientist wrangling numbers, training rogue AI models, and whispering sweet nothings to SQL databases.
-              By night, I&apos;m either debugging code, debating whether R is superior to Python (it&apos;s not, fight me), 
-              or convincing myself that this will be the week I finally master Kubernetes. With experience spanning data science,
-              machine learning, and data engineering, I&apos;ve built AI systems that optimize sales, predict churn, and—if given enough 
-              coffee—might just take over the world (ethically, of course). When I&apos;m not making dashboards look pretty in Tableau or 
-              telling a neural network to do better, you&apos;ll probably find me listening to music, watching football, or writing about why data science is basically modern-day wizardry.
+              If Sherlock Holmes had a laptop, a caffeine addiction, and an unhealthy
+              obsession with data, he&apos;d probably be me. By day, I&apos;m a Data
+              Scientist wrangling numbers, training rogue AI models, and whispering
+              sweet nothings to SQL databases. By night, I&apos;m either debugging
+              code, debating whether R is superior to Python (it&apos;s not, fight me),
+              or convincing myself that this will be the week I finally master Kubernetes.
+              With experience spanning data science, machine learning, and data engineering,
+              I&apos;ve built AI systems that optimize sales, predict churn, and—if given enough
+              coffee—might just take over the world (ethically, of course). When I&apos;m not
+              making dashboards look pretty in Tableau or telling a neural network to do better,
+              you&apos;ll probably find me listening to music, watching football, or writing about
+              why data science is basically modern-day wizardry.
             </p>
           </section>
 
@@ -726,13 +734,13 @@ export default function CVPage() {
                   </li>
                   <li>
                     Led the end-to-end project lifecycle, collaborating with
-                    Directors, VPs, and Portfolio Developers to gather
-                    requirements and drive data-driven decision-making.
+                    Directors, VPs, and Portfolio Developers to gather requirements
+                    and drive data-driven decision-making.
                   </li>
                   <li>
                     Designed and deployed optimized ETL pipelines integrating
-                    data from Salesforce, Qlik, and SharePoint, ensuring
-                    seamless production deployment and global accessibility.
+                    data from Salesforce, Qlik, and SharePoint, ensuring seamless
+                    production deployment and global accessibility.
                   </li>
                   <li>
                     Facilitated the Global Integrated Country Planning (ICP)
@@ -740,9 +748,9 @@ export default function CVPage() {
                     insights.
                   </li>
                   <li>
-                    Designed a Time Series Outlier Detection and Forecasting
-                    Model using SARIMA & Bi-LSTM to identify anomalies and
-                    improve sales projections.
+                    Designed a Time Series Outlier Detection and Forecasting Model
+                    using SARIMA & Bi-LSTM to identify anomalies and improve sales
+                    projections.
                   </li>
                 </ul>
               </div>
@@ -787,8 +795,8 @@ export default function CVPage() {
                     93.5%.
                   </li>
                   <li>
-                    Analyzed the impact of dimensionality reduction and
-                    resampling application order on model accuracy.
+                    Analyzed the impact of dimensionality reduction and resampling
+                    application order on model accuracy.
                   </li>
                 </ul>
               </div>
@@ -847,7 +855,7 @@ export default function CVPage() {
                   <li>
                     <strong>Awards:</strong> Commonwealth Postgraduate Bursary,
                     PGT Vice-Chancellor&apos;s Internation Attainment Scholarship for
-                    Academic Excellence
+                    Academic Excellence.
                   </li>
                 </ul>
               </div>
@@ -862,13 +870,27 @@ export default function CVPage() {
                 </p>
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
-                    <strong>Key Subjects:</strong> Business Analytics, Business Data Management, Computational Thinking, Database Management Systems, Machine Learning Foundations, Machine Learning Techniques, Machine Learning Practice, Mathematics for Data Science -I,
-                  </li> Mathematics for Data Science -II, Statistics for Data Science - I, Statistics for Data Science - II, Programming in Python, Tools in Data Science, Modern Application Development-I,Modern App Development-II, Programming, Data Structures and Algorithms in Python, System Commands
+                    <strong>Key Subjects:</strong> Business Analytics, Business Data
+                    Management, Computational Thinking, Database Management Systems,
+                    Machine Learning Foundations, Machine Learning Techniques, Machine
+                    Learning Practice, Mathematics for Data Science -I, Mathematics for
+                    Data Science -II, Statistics for Data Science - I, Statistics for Data
+                    Science - II, Programming in Python, Tools in Data Science, Modern
+                    Application Development-I, Modern App Development-II, Programming,
+                    Data Structures and Algorithms in Python, System Commands
                   </li>
                   <li>
-                    <strong>Capstone Project:</strong> Designed and built an
-                    end-to-end data pipeline for Sentiment Analysis on Movie Reviews.
-                      Built a full-stack application, Grocify that was an online grocery shopping app 
+                    <strong>Capstone Project:</strong>
+                    <ul className="list-disc list-inside mt-2">
+                      <li>
+                        Designed and built an end-to-end data pipeline for Sentiment
+                        Analysis on Movie Reviews.
+                      </li>
+                      <li>
+                        Built a full-stack application, Grocify that was an online grocery
+                        shopping app.
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <strong>Achievement:</strong> Completed with distinction.
@@ -893,17 +915,14 @@ export default function CVPage() {
                     Scientific Computing, Mathematical Physics, Modern Physics.
                   </li>
                   <li>
-                    <strong>Research Project:</strong> Investigated the dust properties of the 
-                    Coalsack region and ran simulations to calculate the dust temperature and 
-                    the IR intensity of the Coalsack region due to contribution from the three 
-                    brightest stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen. Compared 
-                    the results of our model to real-world observations.
+                    <strong>Research Project:</strong> Investigated the dust properties of the Coalsack region and ran simulations to calculate the dust temperature and the IR intensity of the Coalsack region due to contribution from the three brightest stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen. Compared the results of our model to real-world observations.
                   </li>
                   <li>
                     <strong>Honors:</strong> Graduated with Honors (GPA: 8.06/10).
                   </li>
                 </ul>
               </div>
+            </div>
           </section>
 
           {/* Publications */}

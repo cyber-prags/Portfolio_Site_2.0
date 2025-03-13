@@ -989,7 +989,7 @@ export default function CVPage() {
                         Sentiment Analysis on Movie Reviews.
                       </li>
                       <li>
-                        Developed "Grocify," an online grocery shopping
+                        Developed &quotGrocify,&quot an online grocery shopping
                         application.
                       </li>
                     </ul>

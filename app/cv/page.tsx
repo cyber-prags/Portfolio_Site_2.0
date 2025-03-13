@@ -389,9 +389,8 @@ function ExpandableCertifications() {
         <div className="text-black">
           <p>
             Gained hands-on experience in building object detection models using
-            PyTorch. Explored techniques like bounding box regression,
-            convolutional neural networks (CNNs), and transfer learning for
-            localization tasks.
+            PyTorch. Explored techniques like bounding box regression, CNNs, and
+            transfer learning for localization tasks.
           </p>
         </div>
       ),
@@ -593,7 +592,7 @@ function ExpandableCertifications() {
 }
 
 /* ---------------------------
-   Main Resume Layout with Floating Nav
+   Main Resume Layout with Floating Nav and Floating Back Button
 --------------------------- */
 export default function CVPage() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -612,6 +611,18 @@ export default function CVPage() {
     <main className="relative bg-black-100 flex flex-col overflow-hidden min-h-screen">
       {/* Floating Navbar */}
       <FloatingNav navItems={navItems} />
+
+      {/* Floating Back Button */}
+      <motion.div className="fixed top-4 left-4 z-[6000]">
+        <Link href="/">
+          <div className="relative group">
+            <FaArrowLeft className="text-white text-3xl" />
+            <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all bg-black text-white text-xs rounded px-2 py-1">
+              Return to Home
+            </span>
+          </div>
+        </Link>
+      </motion.div>
 
       {/* Content Container */}
       <div className="flex flex-col md:flex-row pt-20">
@@ -693,19 +704,13 @@ export default function CVPage() {
           {/* Download CV Button */}
           <div className="mt-6">
             <Link href="/_Pragyan_Jyoti_Dutta_CV_.pdf" download>
-              <div className="flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 transition duration-300 cursor-pointer shadow-lg">
-                <FaDownload className="mr-2" />
-                <span>Download CV</span>
-              </div>
-            </Link>
-          </div>
-
-          {/* Return to Home Button */}
-          <div className="mt-auto pt-4">
-            <Link href="/">
-              <div className="flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 transition duration-300 cursor-pointer shadow-lg">
-                <FaArrowLeft className="mr-2" />
-                <span>Return to Home</span>
+              <div className="group relative flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-purple-700 transition duration-300 cursor-pointer shadow-lg hover:scale-105">
+                <FaDownload className="mr-2 text-white group-hover:text-gray-100" />
+                <span className="text-white font-semibold group-hover:text-gray-100">
+                  Download CV
+                </span>
+                {/* Glowing border overlay */}
+                <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-purple-300 pointer-events-none"></div>
               </div>
             </Link>
           </div>
@@ -922,104 +927,108 @@ export default function CVPage() {
               Education
             </h2>
             <div className="space-y-8">
-              {/* University of Liverpool */}
-              <div className="p-6 border border-gray-200 rounded-2xl hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-semibold text-gray-800">
+              <div className="p-6 bg-gray-50 rounded-2xl shadow border hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-800">
                   University of Liverpool, UK
                 </h3>
-                <p className="text-lg text-gray-700 mt-1">
-                  MSc. Data Science & AI (2023-2025)
+                <p className="mt-1 text-base text-gray-700">
+                  MSc. Data Science &amp; AI (2023-2025)
                 </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
+                <ul className="list-disc list-inside mt-4 space-y-2 text-base text-gray-700">
                   <li>
-                    <strong>Relevant Coursework:</strong> Machine Learning &
-                    BioInspired Optimisation, Applied Artificial Intelligence,
-                    Databases and Information Systems, Computational
-                    Intelligence, Data Mining & Visualisation, Programming
-                    Fundamentals, Research Methods in Computer Science,
-                    Mathematics & Statistics for Data Science & AI.
+                    <strong className="text-purple-600">
+                      Relevant Coursework:
+                    </strong>{" "}
+                    Machine Learning &amp; BioInspired Optimisation, Applied
+                    Artificial Intelligence, Databases and Information Systems,
+                    Computational Intelligence, Data Mining &amp; Visualisation,
+                    Programming Fundamentals, Research Methods in Computer
+                    Science, Mathematics &amp; Statistics for Data Science &amp;
+                    AI.
                   </li>
                   <li>
-                    <strong>Research Focus:</strong> Developing AI-driven
-                    predictive models for Sales Planning.
+                    <strong className="text-purple-600">Research Focus:</strong>{" "}
+                    Developing AI-driven predictive models for Sales Planning.
                   </li>
                   <li>
-                    <strong>Awards:</strong> Commonwealth Postgraduate Bursary,
-                    PGT Vice-Chancellor&apos;s Internation Attainment
-                    Scholarship for Academic Excellence.
+                    <strong className="text-purple-600">Awards:</strong>{" "}
+                    Commonwealth Postgraduate Bursary, PGT
+                    Vice-Chancellor&apos;s International Attainment Scholarship
+                    for Academic Excellence.
                   </li>
                 </ul>
               </div>
 
-              {/* Indian Institute of Technology, Madras */}
-              <div className="p-6 border border-gray-200 rounded-2xl hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-semibold text-gray-800">
+              <div className="p-6 bg-gray-50 rounded-2xl shadow border hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-800">
                   Indian Institute of Technology, Madras
                 </h3>
-                <p className="text-lg text-gray-700 mt-1">
+                <p className="mt-1 text-base text-gray-700">
                   Online Diploma in Data Science (2022-2023)
                 </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
+                <ul className="list-disc list-inside mt-4 space-y-2 text-base text-gray-700">
                   <li>
-                    <strong>Key Subjects:</strong> Business Analytics, Business
-                    Data Management, Computational Thinking, Database Management
-                    Systems, Machine Learning Foundations, Machine Learning
-                    Techniques, Machine Learning Practice, Mathematics for Data
-                    Science -I, Mathematics for Data Science -II, Statistics for
-                    Data Science - I, Statistics for Data Science - II,
-                    Programming in Python, Tools in Data Science, Modern
-                    Application Development-I, Modern App Development-II,
-                    Programming, Data Structures and Algorithms in Python,
-                    System Commands
+                    <strong className="text-purple-600">Key Subjects:</strong>{" "}
+                    Business Analytics, Business Data Management, Computational
+                    Thinking, Database Management Systems, Machine Learning
+                    Foundations, Machine Learning Techniques, Machine Learning
+                    Practice, Mathematics for Data Science - I &amp; II,
+                    Statistics for Data Science - I &amp; II, Programming in
+                    Python, Tools in Data Science, Modern Application
+                    Development I &amp; II, Data Structures and Algorithms in
+                    Python, System Commands.
                   </li>
                   <li>
-                    <strong>Capstone Project:</strong>
-                    <ul className="list-disc list-inside mt-2">
+                    <strong className="text-purple-600">
+                      Capstone Project:
+                    </strong>
+                    <ul className="list-disc list-inside mt-2 space-y-1">
                       <li>
                         Designed and built an end-to-end data pipeline for
                         Sentiment Analysis on Movie Reviews.
                       </li>
                       <li>
-                        Built a full-stack application, Grocify that was an
-                        online grocery shopping app.
+                        Developed "Grocify," an online grocery shopping
+                        application.
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <strong>Achievement:</strong> Completed with distinction.
+                    <strong className="text-purple-600">Achievement:</strong>{" "}
+                    Completed with distinction.
                   </li>
                 </ul>
               </div>
 
-              {/* Tezpur University */}
-              <div className="p-6 border border-gray-200 rounded-2xl hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-semibold text-gray-800">
+              <div className="p-6 bg-gray-50 rounded-2xl shadow border hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-800">
                   Tezpur University, India
                 </h3>
-                <p className="text-lg text-gray-700 mt-1">
+                <p className="mt-1 text-base text-gray-700">
                   BSc. in Physics (2020-2023)
                 </p>
-                <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
+                <ul className="list-disc list-inside mt-4 space-y-2 text-base text-gray-700">
                   <li>
-                    <strong>Core Modules:</strong> Quantum Mechanics,
-                    Electromagnetism, Thermodynamics, Statistical Physics,
-                    Classical Mechanics, Electronics, Fuzzy Logic and Neural
-                    Networks, General Biology, General Chemistry, General
-                    Mathematics, Introduction to Scientific Computing,
-                    Mathematical Physics, Modern Physics.
+                    <strong className="text-purple-600">Core Modules:</strong>{" "}
+                    Quantum Mechanics, Electromagnetism, Thermodynamics,
+                    Statistical Physics, Classical Mechanics, Electronics, Fuzzy
+                    Logic and Neural Networks, General Biology, General
+                    Chemistry, General Mathematics, Introduction to Scientific
+                    Computing, Mathematical Physics, Modern Physics.
                   </li>
                   <li>
-                    <strong>Research Project:</strong> Investigated the dust
-                    properties of the Coalsack region and ran simulations to
-                    calculate the dust temperature and the IR intensity of the
-                    Coalsack region due to contribution from the three brightest
-                    stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen.
-                    Compared the results of our model to real-world
-                    observations.
+                    <strong className="text-purple-600">
+                      Research Project:
+                    </strong>{" "}
+                    Investigated the dust properties of the Coalsack region and
+                    ran simulations to calculate the dust temperature and
+                    infrared intensity due to contributions from the three
+                    brightest stars (Alpha Cru, Beta Cru, and Beta Cen).
+                    Compared the model’s results with real-world observations.
                   </li>
                   <li>
-                    <strong>Honors:</strong> Graduated with Honors (GPA:
-                    8.06/10).
+                    <strong className="text-purple-600">Honors:</strong>{" "}
+                    Graduated with Honors (GPA: 8.06/10).
                   </li>
                 </ul>
               </div>

@@ -87,8 +87,7 @@ function useOutsideClick(
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [ref, callback]);
 }
 
@@ -296,136 +295,158 @@ function PublicationsCardDemo() {
 --------------------------- */
 function ExpandableCertifications() {
   const certificationsData = [
-     {
-    title: "AWS Certified AI Practitioner",
-    description: "Issued by Amazon Web Services in 2025.",
-    src: "/AWS AI Prac.png",
-    ctaText: "View Credential",
-    ctaLink: "https://aws.amazon.com/certification/",
-    content: (
-      <div className="text-black">
-        <p>
-          Demonstrated expertise in foundational AI/ML principles, cloud-based AI solutions, and AWS machine learning services. Gained hands-on experience in deploying, training, and managing ML models using AWS SageMaker.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Generative AI using Large Language Models",
-    description: "Issued by AWS & DeepLearning.AI in 2023.",
-    src: "/AI_LLM.png",
-    ctaText: "View Credential",
-    ctaLink:
-      "https://www.coursera.org/account/accomplishments/certificate/NHFSQREJP6DC",
-    content: (
-      <div className="text-black">
-        <p>
-          Developed a deep understanding of transformer-based models, prompt engineering, and fine-tuning LLMs. Explored real-world applications of generative AI and built end-to-end AI solutions using AWS services.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Matillion Data Productivity Cloud, Foundations",
-    description: "Issued by Matillion Academy in 2023.",
-    src: "/Matillion DPC.png",
-    ctaText: "View Credential",
-    ctaLink: "https://academy.matillion.com/certificate/CmmIUu5REg",
-    content: (
-      <div className="text-black">
-        <p>
-          Mastered cloud-based ETL and data transformation pipelines using Matillion. Learned how to optimize workflows, automate data ingestion, and enhance cloud data productivity.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "HackerRank SQL (Basic) Certification",
-    description: "Issued by HackerRank in 2023.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink: "https://www.hackerrank.com/certificates/216aed415b50",
-    content: (
-      <div className="text-black">
-        <p>
-          Validated SQL skills in writing basic queries, filtering and sorting data, joins, and aggregate functions. Demonstrated proficiency in handling structured data for analysis.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "HackerRank SQL (Intermediate) Certification",
-    description: "Issued by HackerRank in 2023.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink: "https://www.hackerrank.com/certificates/e9ea2d792539",
-    content: (
-      <div className="text-black">
-        <p>
-          Showcased expertise in complex SQL queries, advanced joins, window functions, CTEs, and optimizing query performance for large datasets.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Deep Learning with PyTorch: Object Localization",
-    description: "Issued by Coursera in 2023.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink:
-      "https://www.coursera.org/account/accomplishments/certificate/XFZCKJYPEJ49",
-    content: (
-      <div className="text-black">
-        <p>
-          Gained hands-on experience in building object detection models using PyTorch. Explored techniques like bounding box regression, convolutional neural networks (CNNs), and transfer learning for localization tasks.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Python for Data Science, AI & Development",
-    description: "Issued by Coursera in 2021.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink:
-      "https://www.coursera.org/account/accomplishments/verify/7NUVCG2BZXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
-    content: (
-      <div className="text-black">
-        <p>
-          Developed proficiency in Python programming for data science and AI applications. Covered topics including data wrangling, visualization, NumPy, Pandas, and Scikit-learn for machine learning.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Mathematics for Machine Learning: Multivariate Calculus",
-    description: "Issued by Coursera in 2021.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink: "https://www.coursera.org/account/accomplishments/certificate/DU2WRS586NEM",
-    content: (
-      <div className="text-black">
-        <p>
-          Studied the mathematical foundations of machine learning, focusing on partial derivatives, gradients, vector calculus, and optimization techniques essential for neural networks and deep learning.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "Tools for Data Science",
-    description: "Issued by Coursera in 2020.",
-    src: "/SQL_Basic.png",
-    ctaText: "View Credential",
-    ctaLink:
-      "https://www.coursera.org/account/accomplishments/verify/PX3H7LNZG3KT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
-    content: (
-      <div className="text-black">
-        <p>
-          Explored various tools used in the data science ecosystem, including Jupyter Notebook, RStudio, Git, SQL databases, and cloud platforms for data analysis and model deployment.
-        </p>
-      </div>
-    ),
-  },
+    {
+      title: "AWS Certified AI Practitioner",
+      description: "Issued by Amazon Web Services in 2025.",
+      src: "/AWS AI Prac.png",
+      ctaText: "View Credential",
+      ctaLink: "https://aws.amazon.com/certification/",
+      content: (
+        <div className="text-black">
+          <p>
+            Demonstrated expertise in foundational AI/ML principles, cloud-based
+            AI solutions, and AWS machine learning services. Gained hands-on
+            experience in deploying, training, and managing ML models using AWS
+            SageMaker.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Generative AI using Large Language Models",
+      description: "Issued by AWS & DeepLearning.AI in 2023.",
+      src: "/AI_LLM.png",
+      ctaText: "View Credential",
+      ctaLink:
+        "https://www.coursera.org/account/accomplishments/certificate/NHFSQREJP6DC",
+      content: (
+        <div className="text-black">
+          <p>
+            Developed a deep understanding of transformer-based models, prompt
+            engineering, and fine-tuning LLMs. Explored real-world applications
+            of generative AI and built end-to-end AI solutions using AWS
+            services.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Matillion Data Productivity Cloud, Foundations",
+      description: "Issued by Matillion Academy in 2023.",
+      src: "/Matillion DPC.png",
+      ctaText: "View Credential",
+      ctaLink: "https://academy.matillion.com/certificate/CmmIUu5REg",
+      content: (
+        <div className="text-black">
+          <p>
+            Mastered cloud-based ETL and data transformation pipelines using
+            Matillion. Learned how to optimize workflows, automate data
+            ingestion, and enhance cloud data productivity.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "HackerRank SQL (Basic) Certification",
+      description: "Issued by HackerRank in 2023.",
+      src: "/SQL_Basic.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.hackerrank.com/certificates/216aed415b50",
+      content: (
+        <div className="text-black">
+          <p>
+            Validated SQL skills in writing basic queries, filtering and sorting
+            data, joins, and aggregate functions. Demonstrated proficiency in
+            handling structured data for analysis.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "HackerRank SQL (Intermediate) Certification",
+      description: "Issued by HackerRank in 2023.",
+      src: "/SQL Intermediate.png",
+      ctaText: "View Credential",
+      ctaLink: "https://www.hackerrank.com/certificates/e9ea2d792539",
+      content: (
+        <div className="text-black">
+          <p>
+            Showcased expertise in complex SQL queries, advanced joins, window
+            functions, CTEs, and optimizing query performance for large
+            datasets.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Deep Learning with PyTorch: Object Localization",
+      description: "Issued by Coursera in 2023.",
+      src: "/Coursera_Pytorch.png",
+      ctaText: "View Credential",
+      ctaLink:
+        "https://www.coursera.org/account/accomplishments/certificate/XFZCKJYPEJ49",
+      content: (
+        <div className="text-black">
+          <p>
+            Gained hands-on experience in building object detection models using
+            PyTorch. Explored techniques like bounding box regression,
+            convolutional neural networks (CNNs), and transfer learning for
+            localization tasks.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Python for Data Science, AI & Development",
+      description: "Issued by Coursera in 2021.",
+      src: "/IBM_Python_DS.png",
+      ctaText: "View Credential",
+      ctaLink:
+        "https://www.coursera.org/account/accomplishments/verify/7NUVCG2BZXJ9?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+      content: (
+        <div className="text-black">
+          <p>
+            Developed proficiency in Python programming for data science and AI
+            applications. Covered topics including data wrangling,
+            visualization, NumPy, Pandas, and Scikit-learn for machine learning.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Mathematics for Machine Learning: Multivariate Calculus",
+      description: "Issued by Coursera in 2021.",
+      src: "/imperial_multivariate.png",
+      ctaText: "View Credential",
+      ctaLink:
+        "https://www.coursera.org/account/accomplishments/certificate/DU2WRS586NEM",
+      content: (
+        <div className="text-black">
+          <p>
+            Studied the mathematical foundations of machine learning, focusing
+            on partial derivatives, gradients, vector calculus, and optimization
+            techniques essential for neural networks and deep learning.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "Tools for Data Science",
+      description: "Issued by Coursera in 2020.",
+      src: "/tools.png",
+      ctaText: "View Credential",
+      ctaLink:
+        "https://www.coursera.org/account/accomplishments/verify/PX3H7LNZG3KT?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course",
+      content: (
+        <div className="text-black">
+          <p>
+            Explored various tools used in the data science ecosystem, including
+            Jupyter Notebook, RStudio, Git, SQL databases, and cloud platforms
+            for data analysis and model deployment.
+          </p>
+        </div>
+      ),
+    },
   ];
 
   const certCards = certificationsData.map((cert) => ({
@@ -437,9 +458,7 @@ function ExpandableCertifications() {
     content: cert.content,
   }));
 
-  const [active, setActive] = useState<null | (typeof certCards)[number]>(
-    null
-  );
+  const [active, setActive] = useState<null | (typeof certCards)[number]>(null);
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
 
@@ -703,18 +722,21 @@ export default function CVPage() {
               About Me
             </h2>
             <p className="text-lg leading-relaxed">
-              If Sherlock Holmes had a laptop, a caffeine addiction, and an unhealthy
-              obsession with data, he&apos;d probably be me. By day, I&apos;m a Data
-              Scientist wrangling numbers, training rogue AI models, and whispering
-              sweet nothings to SQL databases. By night, I&apos;m either debugging
-              code, debating whether R is superior to Python (it&apos;s not, fight me),
-              or convincing myself that this will be the week I finally master Kubernetes.
-              With experience spanning data science, machine learning, and data engineering,
-              I&apos;ve built AI systems that optimize sales, predict churn, and—if given enough
-              coffee—might just take over the world (ethically, of course). When I&apos;m not
-              making dashboards look pretty in Tableau or telling a neural network to do better,
-              you&apos;ll probably find me listening to music, watching football, or writing about
-              why data science is basically modern-day wizardry.
+              If Sherlock Holmes had a laptop, a caffeine addiction, and an
+              unhealthy obsession with data, he&apos;d probably be me. By day,
+              I&apos;m a Data Scientist wrangling numbers, training rogue AI
+              models, and whispering sweet nothings to SQL databases. By night,
+              I&apos;m either debugging code, debating whether R is superior to
+              Python (it&apos;s not, fight me), or convincing myself that this
+              will be the week I finally master Kubernetes. With experience
+              spanning data science, machine learning, and data engineering,
+              I&apos;ve built AI systems that optimize sales, predict churn,
+              and—if given enough coffee—might just take over the world
+              (ethically, of course). When I&apos;m not making dashboards look
+              pretty in Tableau or telling a neural network to do better,
+              you&apos;ll probably find me listening to music, watching
+              football, or writing about why data science is basically
+              modern-day wizardry.
             </p>
           </section>
 
@@ -803,13 +825,13 @@ export default function CVPage() {
                   </li>
                   <li>
                     Led the end-to-end project lifecycle, collaborating with
-                    Directors, VPs, and Portfolio Developers to gather requirements
-                    and drive data-driven decision-making.
+                    Directors, VPs, and Portfolio Developers to gather
+                    requirements and drive data-driven decision-making.
                   </li>
                   <li>
                     Designed and deployed optimized ETL pipelines integrating
-                    data from Salesforce, Qlik, and SharePoint, ensuring seamless
-                    production deployment and global accessibility.
+                    data from Salesforce, Qlik, and SharePoint, ensuring
+                    seamless production deployment and global accessibility.
                   </li>
                   <li>
                     Facilitated the Global Integrated Country Planning (ICP)
@@ -817,9 +839,9 @@ export default function CVPage() {
                     insights.
                   </li>
                   <li>
-                    Designed a Time Series Outlier Detection and Forecasting Model
-                    using SARIMA & Bi-LSTM to identify anomalies and improve sales
-                    projections.
+                    Designed a Time Series Outlier Detection and Forecasting
+                    Model using SARIMA & Bi-LSTM to identify anomalies and
+                    improve sales projections.
                   </li>
                 </ul>
               </div>
@@ -864,8 +886,8 @@ export default function CVPage() {
                     93.5%.
                   </li>
                   <li>
-                    Analyzed the impact of dimensionality reduction and resampling
-                    application order on model accuracy.
+                    Analyzed the impact of dimensionality reduction and
+                    resampling application order on model accuracy.
                   </li>
                 </ul>
               </div>
@@ -923,8 +945,8 @@ export default function CVPage() {
                   </li>
                   <li>
                     <strong>Awards:</strong> Commonwealth Postgraduate Bursary,
-                    PGT Vice-Chancellor&apos;s Internation Attainment Scholarship for
-                    Academic Excellence.
+                    PGT Vice-Chancellor&apos;s Internation Attainment
+                    Scholarship for Academic Excellence.
                   </li>
                 </ul>
               </div>
@@ -939,25 +961,27 @@ export default function CVPage() {
                 </p>
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
-                    <strong>Key Subjects:</strong> Business Analytics, Business Data
-                    Management, Computational Thinking, Database Management Systems,
-                    Machine Learning Foundations, Machine Learning Techniques, Machine
-                    Learning Practice, Mathematics for Data Science -I, Mathematics for
-                    Data Science -II, Statistics for Data Science - I, Statistics for Data
-                    Science - II, Programming in Python, Tools in Data Science, Modern
-                    Application Development-I, Modern App Development-II, Programming,
-                    Data Structures and Algorithms in Python, System Commands
+                    <strong>Key Subjects:</strong> Business Analytics, Business
+                    Data Management, Computational Thinking, Database Management
+                    Systems, Machine Learning Foundations, Machine Learning
+                    Techniques, Machine Learning Practice, Mathematics for Data
+                    Science -I, Mathematics for Data Science -II, Statistics for
+                    Data Science - I, Statistics for Data Science - II,
+                    Programming in Python, Tools in Data Science, Modern
+                    Application Development-I, Modern App Development-II,
+                    Programming, Data Structures and Algorithms in Python,
+                    System Commands
                   </li>
                   <li>
                     <strong>Capstone Project:</strong>
                     <ul className="list-disc list-inside mt-2">
                       <li>
-                        Designed and built an end-to-end data pipeline for Sentiment
-                        Analysis on Movie Reviews.
+                        Designed and built an end-to-end data pipeline for
+                        Sentiment Analysis on Movie Reviews.
                       </li>
                       <li>
-                        Built a full-stack application, Grocify that was an online grocery
-                        shopping app.
+                        Built a full-stack application, Grocify that was an
+                        online grocery shopping app.
                       </li>
                     </ul>
                   </li>
@@ -978,16 +1002,24 @@ export default function CVPage() {
                 <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
                   <li>
                     <strong>Core Modules:</strong> Quantum Mechanics,
-                    Electromagnetism, Thermodynamics, Statistical Physics, Classical
-                    Mechanics, Electronics, Fuzzy Logic and Neural Networks, General
-                    Biology, General Chemistry, General Mathematics, Introduction to
-                    Scientific Computing, Mathematical Physics, Modern Physics.
+                    Electromagnetism, Thermodynamics, Statistical Physics,
+                    Classical Mechanics, Electronics, Fuzzy Logic and Neural
+                    Networks, General Biology, General Chemistry, General
+                    Mathematics, Introduction to Scientific Computing,
+                    Mathematical Physics, Modern Physics.
                   </li>
                   <li>
-                    <strong>Research Project:</strong> Investigated the dust properties of the Coalsack region and ran simulations to calculate the dust temperature and the IR intensity of the Coalsack region due to contribution from the three brightest stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen. Compared the results of our model to real-world observations.
+                    <strong>Research Project:</strong> Investigated the dust
+                    properties of the Coalsack region and ran simulations to
+                    calculate the dust temperature and the IR intensity of the
+                    Coalsack region due to contribution from the three brightest
+                    stars in the nebula, Alpha Cru, Beta Cru, and Beta Cen.
+                    Compared the results of our model to real-world
+                    observations.
                   </li>
                   <li>
-                    <strong>Honors:</strong> Graduated with Honors (GPA: 8.06/10).
+                    <strong>Honors:</strong> Graduated with Honors (GPA:
+                    8.06/10).
                   </li>
                 </ul>
               </div>

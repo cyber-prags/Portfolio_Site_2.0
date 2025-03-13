@@ -48,6 +48,7 @@ const navItems = [
   { name: "Education", link: "#education" },
   { name: "Publications", link: "#publications" },
   { name: "Certifications", link: "#certifications" },
+  { name: "Interests", link: "#interests" },
 ];
 
 /* ---------------------------
@@ -1055,6 +1056,64 @@ export default function CVPage() {
               Certifications
             </h2>
             <ExpandableCertifications />
+          </section>
+          {/* Interests */}
+          <section
+            id="interests"
+            className="p-8 bg-white rounded-2xl shadow-lg text-justify"
+          >
+            <h2 className="text-4xl font-bold text-purple-600 mb-8">
+              Interests
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+              {[
+                {
+                  caption: "Traveling",
+                  src: "/Paris.jpg",
+                  type: "image",
+                },
+                {
+                  caption: "Powerlifting",
+                  src: "/PW.JPEG",
+                  type: "image",
+                },
+                {
+                  caption: "Music",
+                  src: "/Music.jpeg",
+                  type: "image",
+                },
+                {
+                  caption: "Football",
+                  src: "/Anfield.JPEG",
+                  type: "image",
+                },
+              ].map((interest, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  {interest.type === "image" ? (
+                    <div className="w-60 h-80 rounded-lg overflow-hidden shadow-md">
+                      <Image
+                        src={interest.src}
+                        alt={interest.caption}
+                        width={160}
+                        height={160}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                  ) : interest.type === "video" ? (
+                    <video
+                      className="w-40 h-40 rounded-lg overflow-hidden shadow-md"
+                      controls
+                    >
+                      <source src={interest.src} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : null}
+                  <p className="mt-2 text-lg font-medium text-gray-800">
+                    {interest.caption}
+                  </p>
+                </div>
+              ))}
+            </div>
           </section>
         </main>
       </div>

@@ -642,7 +642,7 @@ export default function CVPage() {
             className="relative w-80 h-80 mb-4 rounded-full overflow-hidden shadow-2xl ring-4 ring-purple-400 ring-offset-4 ring-offset-gray-900"
           >
             <Image
-              src="/Profile.jpeg"
+              src="/profile2.jpg"
               alt="Profile Picture"
               fill
               className="object-cover"

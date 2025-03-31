@@ -101,7 +101,15 @@ export const blogs = [
 
 export const projects = [
   {
-    id: 3,
+    id: 1,
+    title: "Fine-Tuning Gemma Models in Keras using LoRA",
+    des: "We fine tune a Google Gemma model in Keras using the LoRA technique ",
+    img: "/Hedge.jpg",
+    iconLists: ["/Python.svg", "Keras.svg", "gemma-color.svg"],
+    link: "https://github.com/cyber-prags/Fine-Tuning-Gemma-model-using-LoRA/tree/main",
+  },
+  {
+    id: 2,
     title: "Multi-Agent Hedge Fund Analyst",
     des: "A multi-agentic system that simulates a Hedge Fund based on 9 agents to give investment advice to the user based on stock tickers ",
     img: "/Hedge.jpg",
@@ -109,7 +117,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Agentic-AI-Hedge-Fund",
   },
   {
-    id: 1,
+    id: 3,
     title: "My Portfolio Page",
     des: "Latest Portfolio Page.",
     img: "/Portfolio.jpeg",
@@ -117,7 +125,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Portfolio_Site_2.0",
   },
   {
-    id: 2,
+    id: 4,
     title: "Fake News Detection using Graph Neural Networks",
     des: "This project explores the use of Graph Neural Networks (GNNs) for fake news detection. By leveraging the graph structure of news articles and their relationships, the model captures relational information for more accurate classification.",
     img: "/Fake_News.jpeg",
@@ -126,7 +134,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Starbucks-Delivery Route Optimisation",
     des: "Optimising Delivery Routes for Stabucks in London using Graphs and making use of Dijkstra's algorithm to solve it",
     img: "/coffee.jpeg",
@@ -134,7 +142,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Starbucks-Delivery-Route-Optimisation",
   },
   {
-    id: 5,
+    id: 6,
     title: "Academic Research Paper Information Retrieval System",
     des: "Academic Research Tool made using LangChain, PaLm-2, FAISS and front-end made using Streamlit",
     img: "/paper.jpeg",
@@ -142,7 +150,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Information-Retrieval-System",
   },
   {
-    id: 6,
+    id: 7,
     title: "Uber Analytics ETL Project",
     des: "A Data Engineering Project built on Google Cloud Platform and Mage Data Tool to analyze data from Uber.",
     img: "/Uber.jpeg",
@@ -150,7 +158,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Uber-analytics-Data-Engineering-Project",
   },
   {
-    id: 7,
+    id: 8,
     title: "Employee Churn Model Predictor",
     des: "A predictive tool designed towards predicting the churn rate and enabling companies to retain their employees for longer periods using insights of the project.",
     img: "/Churn_HR.jpg",
@@ -158,7 +166,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Churn_Model_Predictor",
   },
   {
-    id: 8,
+    id: 9,
     title: "Old Portfolio Page",
     des: "Previous Portfolio Page.",
     img: "/portfolio.jpg",
@@ -166,7 +174,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Fake-News-Detection-using-Graph-Neural-NetworksGraph",
   },
   {
-    id: 9,
+    id: 10,
     title: "Grocify",
     des: "Grocify is a your community-focused e-commerce grocery store webapp aimed at serving the community in the best possible way",
     img: "/GGrocery.png",
@@ -180,7 +188,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Grocery_App_Store",
   },
   {
-    id: 10,
+    id: 11,
     title: "Movie Sentiment Reviews",
     des: "This project aims to predict the sentiment of movie reviews using state of the art machine learning models.",
     img: "/Movie.jpeg",
@@ -188,7 +196,7 @@ export const projects = [
     link: "https://github.com/cyber-prags/Movie_Review_Prediction",
   },
   {
-    id: 11,
+    id: 12,
     title: "Pulsar Star classification",
     des: "Research project aimed at findint the optimal technique to use, Dimentionality reduction and then resampling or vice versa and then apply Machine Learning and Deep Learning models to classify pulsar stars for the HTRU dataset.",
     img: "/Pulsar.png",
@@ -197,7 +205,7 @@ export const projects = [
   },
 
   {
-    id: 12,
+    id: 13,
     title: "Netflix Analytics Dashboard",
     des: "A Dashboard made in Tableau showcasing the various Analytical stats of British Airways ranging from most travelled places to best performing service",
     img: "/netflix.jpg",
@@ -205,7 +213,7 @@ export const projects = [
     link: "https://public.tableau.com/app/profile/pragyan.jyoti.dutta/viz/NetflixAnalyticsDashboard_17074203055070/Dashboard1",
   },
   {
-    id: 13,
+    id: 14,
     title: "British Airways Dashboard",
     des: "Customer Segmentation Oriented dashboard for Netflix",
     img: "/flight.jpg",
@@ -213,7 +221,7 @@ export const projects = [
     link: "https://public.tableau.com/app/profile/pragyan.jyoti.dutta/viz/BritishAirwaysAnalytics/Dashboard1",
   },
   {
-    id: 14,
+    id: 15,
     title: "King County,Washington House Sales Dashboard",
     des: "A Dashboard made in Tableau showcasing the various Analytical stats of King County, Washinton House Sales",
     img: "/Real Estate.png",
@@ -221,7 +229,7 @@ export const projects = [
     link: "https://public.tableau.com/app/profile/pragyan.jyoti.dutta/viz/BritishAirwaysAnalytics/Dashboard1",
   },
   {
-    id: 15,
+    id: 16,
     title: "Patients Analytics in PowerBI",
     des: "A Dashboard made in PowerBI showcasing the various Analytical stats of a hospital with key fields being number in-patients and out-patients.",
     img: "/Patient.jpeg",

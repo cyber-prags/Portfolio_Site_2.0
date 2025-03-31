@@ -104,7 +104,7 @@ export const projects = [
     id: 1,
     title: "Fine-Tuning Gemma Models in Keras using LoRA",
     des: "We fine tune a Google Gemma model in Keras using the LoRA technique ",
-    img: "/Hedge.jpg",
+    img: "/lora.jpg",
     iconLists: ["/Python.svg", "Keras.svg", "gemma-color.svg"],
     link: "https://github.com/cyber-prags/Fine-Tuning-Gemma-model-using-LoRA/tree/main",
   },
